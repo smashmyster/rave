@@ -24,7 +24,7 @@ import { EventModule } from './app/logic/event/event.module';
     synchronize: false,
     logging: true,
     entities: ['dist/src/app/entities/*{.ts,.js}'],
-    // namingStrategy: new CustomNamingStrategy(),
+    // namingStrategy: new CustomNamingStrategy(), 
   }),
   UserModule,
   PlacesModule,

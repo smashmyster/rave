@@ -2,17 +2,17 @@ import { DataSource } from "typeorm"
 
 
 export default new DataSource({
-  type: 'postgres',
+  type: 'mysql',
   host: 'localhost',
-  port: 5432,
-  username: 'nestjs',
-  password: 'JacksoN1!@#',
+  port: 3306,
+  username: 'root',
+  password: '',
   database: 'rave',
   logging: true,
   synchronize: false,
   name: 'default',
   entities: [
-    "src/app/entities/*{.ts,.js}"
+    "src/app/entity2/*{.ts,.js}"
   ],
   migrations: ["src/migrations/*.ts"],
 });
